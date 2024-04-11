@@ -63,6 +63,10 @@ const Contact = () => {
         setShowConfetti(false);
       }, 5555);
     } else {
+      mailRef.current = '';
+      companyRef.current = '';
+      messageRef.current = '';
+
       myForm.reset();
 
       toast({

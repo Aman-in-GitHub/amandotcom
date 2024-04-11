@@ -4,6 +4,8 @@ import { useToast } from '@/components/ui/use-toast';
 
 import Confetti from 'react-confetti';
 
+const API_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
 const Contact = () => {
   const [type, setType] = useState('i');
 
@@ -18,7 +20,7 @@ const Contact = () => {
   const companyRef = useRef('');
   const messageRef = useRef('');
 
-  function onFormSubmit(e) {
+  async function onFormSubmit(e) {
     e.preventDefault();
 
     if (
@@ -37,32 +39,38 @@ const Contact = () => {
     const myForm = e.target;
     const formData = new FormData(myForm);
 
-    fetch('/', {
+    formData.append('access_key', API_KEY);
+
+    const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString()
-    })
-      .then(() => {
-        toast({ title: 'Form Submitted Successfully' });
+      body: formData
+    });
 
-        mailRef.current = '';
-        companyRef.current = '';
-        messageRef.current = '';
+    const data = await response.json();
 
-        myForm.reset();
+    if (data.success) {
+      toast({ title: 'Form Submitted Successfully' });
 
-        setShowConfetti(true);
+      mailRef.current = '';
+      companyRef.current = '';
+      messageRef.current = '';
 
-        setTimeout(() => {
-          setShowConfetti(false);
-        }, 5555);
-      })
-      .catch((error) =>
-        toast({
-          variant: 'destructive',
-          title: `Error: ${error}`
-        })
-      );
+      myForm.reset();
+
+      setShowConfetti(true);
+
+      setTimeout(() => {
+        setShowConfetti(false);
+      }, 5555);
+    } else {
+      myForm.reset();
+
+      toast({
+        variant: 'destructive',
+        title: `Error submitting form`,
+        description: data.message
+      });
+    }
   }
 
   return (
@@ -81,13 +89,10 @@ const Contact = () => {
         <form
           className="p-4 lg:p-6 w-full text-white transition-colors  bg-gradient-to-r from-sky-500 to-sky-400 dark:bg-[#232323]"
           name="Contact"
-          method="POST"
-          data-netlify="true"
           onSubmit={onFormSubmit}
           autoComplete="off"
         >
-          <input type="hidden" name="form-name" value="Contact" />
-
+          <input type="hidden" name="access_key" value={API_KEY}></input>
           <h3 className="text-4xl font-semibold mb-4">Get In Touch</h3>
           <div className="mb-4">
             <p className="text-xl mb-2">Hi! My email is...</p>
@@ -141,7 +146,6 @@ const Contact = () => {
               />
             </div>
           )}
-
           <div className="mb-4">
             <p className="text-xl mb-2">I'd love to ask about...</p>
             <textarea

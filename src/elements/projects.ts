@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'NewsBit',
+    desc: `NewsBit is the platform for staying updated with the latest news and notices from TU Institute of Science and Technology (IOST).`,
+    tech: ['react-original', 'tailwindcss-plain', 'nodejs-plain'],
+    type: 'web',
+    imageUrl: '/projects/newsbit.png',
+    directLink: 'https://newsbit.amanchand.com.np',
+    codeLink: 'https://github.com/Aman-in-GitHub/NewsBit-TheNewsletterForIOST'
+  },
+  {
     title: 'Rakshya',
     desc: `Rakshya is an award winning health app offering complete voice control, offline functionality, and location tracking which can help you in emergency situations.`,
     tech: ['react-original', 'tailwindcss-plain', 'java-plain'],
@@ -29,7 +38,20 @@ export const projects = [
     directLink: 'https://kode-by-aman.netlify.app',
     codeLink: 'https://github.com/Aman-in-GitHub/Kode-UniversalCodeCompiler'
   },
-
+  {
+    title: 'Converse',
+    desc: `Converse is a real-time chat application that allows users to communicate with each other in real-time, in privacy-focused chat rooms through a simple and intuitive interface.`,
+    tech: [
+      'react-original',
+      'tailwindcss-plain',
+      'socketio-original',
+      'nodejs-plain'
+    ],
+    type: 'web',
+    imageUrl: '/projects/converse.png',
+    directLink: 'https://converse-by-aman.netlify.app',
+    codeLink: 'https://github.com/Aman-in-GitHub/Converse-TalkWithPrivacy'
+  },
   {
     title: 'Prism',
     desc: `Prism is a PWA supported movie portal which lets you binge all the latest and greatest movies in highest quality possible in an easy to use UI.`,

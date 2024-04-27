@@ -39,20 +39,6 @@ export const projects = [
     codeLink: 'https://github.com/Aman-in-GitHub/Kode-UniversalCodeCompiler'
   },
   {
-    title: 'Converse',
-    desc: `Converse is a real-time chat application that allows users to communicate with each other in real-time, in privacy-focused chat rooms through a simple and intuitive interface.`,
-    tech: [
-      'react-original',
-      'tailwindcss-plain',
-      'socketio-original',
-      'nodejs-plain'
-    ],
-    type: 'web',
-    imageUrl: '/projects/converse.png',
-    directLink: 'https://converse-by-aman.netlify.app',
-    codeLink: 'https://github.com/Aman-in-GitHub/Converse-TalkWithPrivacy'
-  },
-  {
     title: 'Prism',
     desc: `Prism is a PWA supported movie portal which lets you binge all the latest and greatest movies in highest quality possible in an easy to use UI.`,
     tech: ['react-original', 'tailwindcss-plain'],

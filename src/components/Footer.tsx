@@ -2,10 +2,10 @@ import CanvasCursor from "@/utils/CanvasCursor";
 
 function Footer() {
   return (
-    <footer className="w-full border-t-2 border-neutral-800 absolute bottom-0 left-0 right-0 py-4 bg-background text-neutral-400 text-xs lg:text-sm select-none">
+    <footer className="absolute bottom-0 left-0 right-0 w-full select-none border-t-2 border-neutral-800 bg-background py-4 text-xs text-neutral-400 lg:text-sm">
       <CanvasCursor />
 
-      <div className="max-w-[500px] lg:max-w-[750px] mx-auto flex items-center justify-between">
+      <div className="mx-auto flex max-w-[500px] items-center justify-between lg:max-w-[750px]">
         <p>Aman Chand © {new Date().getFullYear()}</p>
         <p>
           {new Date().getHours() >= 5 && new Date().getHours() < 12

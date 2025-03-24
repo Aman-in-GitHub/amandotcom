@@ -11,11 +11,11 @@ import { EMAIL_ADDRESS } from "@/utils/info";
 ---
 
 <Layout title="Aman Chand">
-  <main class="max-w-[500px] lg:max-w-[750px] flex flex-col gap-6 lg:gap-8">
+  <main class="flex max-w-[500px] flex-col gap-6 lg:max-w-[750px] lg:gap-8">
     <img
       src="/gengar.png"
       alt="Scary Gengar"
-      class="size-20 lg:size-40 absolute top-4 right-4 opacity-0 hover:opacity-100 duration-[3s] cursor-pointer"
+      class="absolute right-4 top-4 size-20 cursor-pointer opacity-0 duration-[3s] hover:opacity-100 lg:size-40"
       onclick="playAudio()"
     />
 
@@ -28,27 +28,29 @@ import { EMAIL_ADDRESS } from "@/utils/info";
 
     <a href="/">
       <h1
-        class="text-neutral-400 hover:text-special duration-500 text-4xl font-special"
+        class="motion-preset-slide-up-sm font-special text-4xl text-neutral-400 duration-500 motion-blur-in motion-opacity-in motion-duration-[1s] hover:text-special"
       >
         Aman Chand
       </h1>
     </a>
 
-    <section class="flex flex-col gap-4 lg:gap-6">
+    <section
+      class="motion-preset-slide-up-sm flex flex-col gap-4 motion-blur-in motion-opacity-in motion-duration-[1s] motion-delay-[0.25s] lg:gap-6"
+    >
       <p>
         <a
-          class="underline duration-500 text-body decoration-neutral-500 hover:text-special hover:decoration-neutral-300 underline-offset-4"
+          class="text-body underline decoration-neutral-500 underline-offset-4 duration-500 hover:text-special hover:decoration-neutral-300"
           href={GITHUB}
           target="_blank"
           rel="noopener noreferrer"
         >
           Full stack software developer</a
         > | Currently working on <span
-          class="bg-gradient-to-r from-blue via-orange to-purple bg-clip-text text-transparent selection:text-purple selection:bg-neutral-800 whitespace-nowrap"
+          class="whitespace-nowrap bg-gradient-to-r from-blue via-orange to-purple bg-clip-text text-transparent selection:bg-neutral-800 selection:text-purple"
         >
           <a
             href="https://bitly.com/98K8eH"
-            class="underline duration-500 hover:text-orange hover:decoration-white decoration-purple underline-offset-4"
+            class="underline decoration-purple underline-offset-4 duration-500 hover:text-orange hover:decoration-white"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -61,7 +63,7 @@ import { EMAIL_ADDRESS } from "@/utils/info";
         <span class="relative">
           <span class="lg:group-hover:invisible">inspired by</span>
           <span
-            class="hidden lg:block lg:absolute left-0 top-0 invisible group-hover:visible text-sm mt-0.5"
+            class="invisible left-0 top-0 mt-0.5 hidden text-sm group-hover:visible lg:absolute lg:block"
             >copied from</span
           >
         </span>
@@ -70,7 +72,7 @@ import { EMAIL_ADDRESS } from "@/utils/info";
     </section>
 
     <section
-      class="flex flex-col lg:flex-row justify-between text-neutral-400 gap-6 lg:gap-8"
+      class="motion-preset-slide-up-sm flex flex-col justify-between gap-6 text-neutral-400 motion-blur-in motion-opacity-in motion-duration-[1s] motion-delay-[0.5s] lg:flex-row lg:gap-8"
     >
       <div class="lg:w-52">
         <p class="mb-6 lg:mb-8">Projects</p>
@@ -116,8 +118,10 @@ import { EMAIL_ADDRESS } from "@/utils/info";
       </div>
     </section>
 
-    <section class="flex flex-col gap-4 lg:gap-6">
-      <h2 class="font-special text-3xl mb-2 text-neutral-400">More about me</h2>
+    <section
+      class="motion-preset-slide-up-sm flex flex-col gap-4 motion-blur-in motion-opacity-in motion-duration-[1s] motion-delay-[0.75s] lg:gap-6"
+    >
+      <h2 class="mb-2 font-special text-3xl text-neutral-400">More about me</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita eaque
         tenetur dignissimos quasi magni optio quam doloribus nesciunt
@@ -133,18 +137,20 @@ import { EMAIL_ADDRESS } from "@/utils/info";
       </p>
     </section>
 
-    <section class="flex flex-col gap-4 lg:gap-6">
-      <h2 class="font-special text-3xl mb-2 text-neutral-400">
+    <section
+      class="motion-preset-slide-up-sm flex flex-col gap-4 motion-blur-in motion-opacity-in motion-duration-[1s] motion-delay-[1s] lg:gap-6"
+    >
+      <h2 class="mb-2 font-special text-3xl text-neutral-400">
         Leave a message
       </h2>
       <Messages client:only="react" />
     </section>
 
     <section class="flex flex-col gap-4 lg:gap-6">
-      <h2 class="font-special text-3xl text-neutral-400 mb-2">
+      <h2 class="mb-2 font-special text-3xl text-neutral-400">
         Previous portfolios
       </h2>
-      <div class="flex flex-col md:flex-row gap-4 lg:gap-6">
+      <div class="flex flex-col gap-4 md:flex-row lg:gap-6">
         <div class="flex gap-4 lg:gap-6">
           <Link title="First Portfolio" href="https://v-1.amanchand.com.np" />
           <Link title="Second Portfolio" href="https://v0.amanchand.com.np" />
@@ -158,7 +164,7 @@ import { EMAIL_ADDRESS } from "@/utils/info";
     </section>
 
     <section class="flex flex-col gap-4 lg:gap-6">
-      <h2 class="font-special text-3xl text-neutral-400 mb-2">Contact</h2>
+      <h2 class="mb-2 font-special text-3xl text-neutral-400">Contact</h2>
       <p>
         Send a message at <Link
           title={EMAIL_ADDRESS}

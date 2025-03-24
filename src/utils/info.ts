@@ -3,9 +3,9 @@ export const GITHUB = "https://github.com/Aman-in-GitHub";
 
 export const PROJECTS = [
   {
-    title: "Hotel Dolmaling",
-    description: "Solo Freelance Project For a Hotel",
-    link: "https://hoteldolmaling.com",
+    title: "Vibes",
+    description: "A TikTok like Binge Reading Application",
+    link: "https://thevibes.pages.dev",
   },
   {
     title: "TheRizzBook",

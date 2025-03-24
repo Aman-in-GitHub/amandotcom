@@ -4,17 +4,17 @@ import { confetti } from "@tsparticles/confetti";
 import SendIcon from "@/components/SendIcon";
 
 const colors = [
-  "#dd7878",
-  "#ea76cb",
-  "#8839ef",
-  "#d20f39",
-  "#e64553",
-  "#fe640b",
-  "#df8e1d",
-  "#40a02b",
-  "#04a5e5",
-  "#1e66f5",
-  "#7287fd",
+  "#f19898",
+  "#f292d8",
+  "#a566ff",
+  "#ff4d6d",
+  "#ff6b76",
+  "#ff8c3f",
+  "#ffb549",
+  "#5cc456",
+  "#30c5f7",
+  "#4a82ff",
+  "#91a0ff",
 ];
 
 function runSentConfetti() {
@@ -146,13 +146,13 @@ function Messages() {
 
   return (
     <div className="flex flex-col">
-      <div className="h-96 w-full border-2 border-neutral-800 relative overflow-hidden">
+      <div className="relative h-96 w-full overflow-hidden border-2 border-neutral-800">
         <div
           ref={messagesContainerRef}
-          className="h-full overflow-y-auto select-none no-scrollbar"
+          className="no-scrollbar h-full select-none overflow-y-auto"
         >
           {isLoading || messages.length === 0 ? (
-            <div className="h-full flex items-center justify-center font-special text-4xl lg:text-5xl">
+            <div className="flex h-full items-center justify-center font-special text-4xl lg:text-5xl">
               {isLoading ? (
                 <p className="animate-pulse">Loading Messages...</p>
               ) : (
@@ -164,7 +164,7 @@ function Messages() {
               {messages.map((message) => (
                 <div
                   key={message.id}
-                  className="flex gap-2 items-center my-1"
+                  className="my-1 flex items-center gap-2"
                   title={`${message.name} at ${new Date(message.created_at).toLocaleString()}`}
                 >
                   <p
@@ -177,7 +177,7 @@ function Messages() {
                       ? message.name.split(" ")[0].slice(0, 20) + "..."
                       : message.name.split(" ")[0]}
                   </p>
-                  <p className="text-body whitespace-nowrap">
+                  <p className="whitespace-nowrap text-body">
                     {message.message}
                   </p>
                 </div>
@@ -187,7 +187,7 @@ function Messages() {
         </div>
       </div>
 
-      <div className="w-full flex items-center">
+      <div className="flex w-full items-center">
         <input
           type="text"
           placeholder={
@@ -198,8 +198,8 @@ function Messages() {
                 : "Type a message"
           }
           ref={messageRef}
-          className={`text-sm lg:text-base w-full bg-background border-2 border-t-0 border-neutral-800 p-4 text-body outline-none ${
-            isError && "placeholder-red-300 bg-red-950"
+          className={`w-full border-2 border-t-0 border-neutral-800 bg-background p-4 text-sm text-body outline-none lg:text-base ${
+            isError && "bg-red-950 placeholder-red-300"
           }`}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
@@ -210,7 +210,7 @@ function Messages() {
           }}
         />
         <button
-          className={`px-6 py-2 active:opacity-80 self-stretch duration-500 border-neutral-800 border-r-2 border-b-2 ${
+          className={`self-stretch border-b-2 border-r-2 border-neutral-800 px-6 py-2 duration-500 active:opacity-80 ${
             isSending && "opacity-40"
           } ${isError ? "bg-red-700" : "bg-green-700"}`}
           onClick={handleMessageSubmit}

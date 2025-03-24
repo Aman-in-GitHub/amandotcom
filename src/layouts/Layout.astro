@@ -50,12 +50,12 @@ const { title } = Astro.props;
     />
   </head>
   <body
-    class="min-h-screen bg-background text-body font-body flex justify-center mt-8 lg:mt-36 px-8 selection:bg-neutral-800"
+    class="mt-8 flex min-h-screen justify-center bg-background px-8 font-body text-body selection:bg-neutral-800 lg:mt-36"
   >
     <slot />
     <div
       id="countdown"
-      class="lg:text-5xl font-special fixed bottom-0 right-2 lg:bottom-4 lg:right-8 select-none"
+      class="fixed bottom-0 right-2 select-none font-special motion-blur-in motion-opacity-in motion-duration-[1s] motion-delay-[1.25s] lg:bottom-4 lg:right-8 lg:text-5xl"
     >
     </div>
   </body>

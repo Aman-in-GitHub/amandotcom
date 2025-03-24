@@ -58,14 +58,14 @@ export default defineConfig({
       },
       strategies: "generateSW",
       workbox: {
-        skipWaiting: false,
+        skipWaiting: true,
         clientsClaim: true,
         maximumFileSizeToCacheInBytes: 5000000,
         globPatterns: ["**/*.{js,css,html,ico,png,svg,jpg,jpeg,gif,woff2}"],
         runtimeCaching: [
           {
             urlPattern: /\.(?:js|css|html|ico|png|svg|jpg|jpeg|gif|woff2)$/,
-            handler: "NetworkFirst",
+            handler: "StaleWhileRevalidate",
             options: {
               cacheName: "portfolio-assets",
               expiration: {

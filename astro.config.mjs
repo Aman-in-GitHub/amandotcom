@@ -26,12 +26,7 @@ export default defineConfig({
       mode: "production",
       base: "/",
       scope: "/",
-      includeAssets: [
-        "logo.svg",
-        "pwa-192x192.png",
-        "pwa-512x512.png",
-        "apple-touch-icon-180x180.png",
-      ],
+      includeAssets: ["logo.svg"],
       registerType: "autoUpdate",
       manifest: {
         name: "Aman Chand",
@@ -53,26 +48,6 @@ export default defineConfig({
             src: "/mask-icon.svg",
             type: "image/svg+xml",
             purpose: "any maskable",
-          },
-        ],
-      },
-      strategies: "generateSW",
-      workbox: {
-        skipWaiting: true,
-        clientsClaim: true,
-        maximumFileSizeToCacheInBytes: 5000000,
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,jpg,jpeg,gif,woff2}"],
-        runtimeCaching: [
-          {
-            urlPattern: /\.(?:js|css|html|ico|png|svg|jpg|jpeg|gif|woff2)$/,
-            handler: "StaleWhileRevalidate",
-            options: {
-              cacheName: "portfolio-assets",
-              expiration: {
-                maxEntries: 500,
-                maxAgeSeconds: 60 * 60 * 24 * 30,
-              },
-            },
           },
         ],
       },

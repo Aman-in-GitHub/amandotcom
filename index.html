@@ -56,6 +56,10 @@
         background-color: #faf9f6;
         font-family: "Times New Roman", Times, serif;
       }
+
+      #age {
+        font-variant-numeric: tabular-nums;
+      }
     </style>
 
     <script type="application/ld+json">
@@ -121,7 +125,7 @@
     <header>
       <h1>Aman Chand</h1>
 
-      <p>20, Full-Stack Software Developer</p>
+      <p><span id="age"></span>, Full-Stack Software Developer</p>
     </header>
 
     <hr />
@@ -241,10 +245,7 @@
             >
           </li>
           <li>
-            <span
-              >MenstruaLog - Browser extension for tracking period cycles &
-              reminders</span
-            >
+            <span>MenstruaLog - Browser extension for tracking period cycles & reminders</span>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -323,9 +324,7 @@
           </li>
           <li>
             <span>Contact? Send a message at</span>
-            <a
-              href="mailto:amanchandinc@gmail.com"
-              title="Email me at amanchandinc@gmail.com"
+            <a href="mailto:amanchandinc@gmail.com" title="Send an email at amanchandinc@gmail.com"
               >amanchandinc@gmail.com</a
             >
           </li>
@@ -391,5 +390,25 @@
         </ul>
       </section>
     </main>
+
+    <script>
+      const birthDate = new Date("2005-11-05T00:00:00");
+
+      function updateAge() {
+        const now = new Date();
+
+        const ageInMs = now - birthDate;
+        const ageInYears = ageInMs / (365.2425 * 24 * 60 * 60 * 1000);
+
+        const stablePart = ageInYears.toFixed(7);
+        const tickerDigit = Math.floor((Date.now() / 100) % 10);
+
+        document.getElementById("age").textContent = stablePart + tickerDigit;
+      }
+
+      updateAge();
+
+      setInterval(updateAge, 100);
+    </script>
   </body>
 </html>

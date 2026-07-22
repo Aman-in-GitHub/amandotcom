@@ -48,13 +48,44 @@
         box-sizing: border-box;
       }
 
+      :root {
+        --background: rgba(58, 12, 28, 1);
+        --foreground: rgba(245, 231, 220, 1);
+      }
+
+      @font-face {
+        font-family: "Roboto Flex";
+        src: url("./roboto-flex-latin-wght-normal.woff2") format("woff2");
+        font-weight: 100 1000;
+        font-style: normal;
+        font-display: swap;
+      }
+
       body {
         margin: 0 auto;
         padding: 1.5rem;
         max-width: 1200px;
-        color: #121212;
-        background-color: #faf9f6;
-        font-family: "Times New Roman", Times, serif;
+
+        color: var(--foreground);
+        background-color: var(--background);
+
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 400;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      a {
+        color: var(--foreground);
+        font-weight: 500;
       }
 
       #age {
@@ -127,8 +158,6 @@
 
       <p><span id="age">00.00000000</span>, Full-Stack Software Developer</p>
     </header>
-
-    <hr />
 
     <main>
       <section>
@@ -208,8 +237,6 @@
         </ul>
       </section>
 
-      <hr />
-
       <section>
         <h2>Projects</h2>
 
@@ -256,8 +283,6 @@
           </li>
         </ul>
       </section>
-
-      <hr />
 
       <section>
         <h2>Achievements</h2>
@@ -306,8 +331,6 @@
         </ul>
       </section>
 
-      <hr />
-
       <section>
         <h2>Socials</h2>
 
@@ -330,8 +353,6 @@
           </li>
         </ul>
       </section>
-
-      <hr />
 
       <section>
         <h2>Previous portfolios</h2>

@@ -1,0 +1,45 @@
+# Aman Chand
+
+> Full-stack software developer from Nepal with 2+ years of experience building web and mobile products. Specializing in Node.js, React, React Native, Android, iOS, and web scraping.
+
+Born 2005-11-05 in Nepal. Alumnus of Tribhuvan University. Currently Lead Software Developer at Dopamine Confectionery. Speaks English, Nepali, and Hindi. Available for freelance and contract work.
+
+- Site: https://amanchand.com.np
+- Email: amanchandinc@gmail.com
+
+## Experience
+
+- [Dopamine Confectionery](https://dopamine.com.np): Lead Software Developer (present).
+- [Mashup Bar](https://mashupbar.de): Web Developer (contract).
+- [Halo Club](https://halo.club): Web Developer (contract).
+- [Hotel Dolmaling](https://hoteldolmaling.com): Full-Stack Software Developer (contract).
+- [The Audio Bee](https://theaudiobee.com): Frontend Developer (late 2024–2025).
+- [Parsedom](https://parsedom.com): Web Scraping Developer (2024–mid 2024).
+- [Upwork profile](https://www.upwork.com/freelancers/~01f988b1775d874b9c): Freelance work and client reviews.
+
+## Projects
+
+- [Pokédex](https://github.com/Aman-in-GitHub/Pokedex): An app to catch 'em all.
+- [Vibes](https://github.com/Aman-in-GitHub/Vibes): TikTok-style website for binge reading.
+- [Kode](https://github.com/Aman-in-GitHub/Kode-UniversalCodeCompiler): Online code editor and compiler supporting 15+ languages.
+- [MenstruaLog](https://github.com/Aman-in-GitHub/MenstruaLog-PeriodTrackingExtension): Browser extension for tracking period cycles and reminders.
+
+## Achievements
+
+- [KEC Hackathon 2025](https://github.com/Aman-in-GitHub/KECIT-Hackathon-2025): 1st Runner-Up.
+- [KU Hackfest 2024 — Surakshya](https://github.com/Aman-in-GitHub/Surakshya-KUHackfest-2024): Best OSM Project.
+- [ASCOL Hackfest 2024](https://github.com/Aman-in-GitHub/Ascol-Hackfest-2024): 1st Runner-Up.
+- [KU Hackfest 2023 — Rakshya](https://github.com/Aman-in-GitHub/Rakshya-AwardWinningHealthApp): Best Health Project.
+
+## Socials
+
+- [GitHub](https://github.com/Aman-in-GitHub): Source code and open-source work.
+- [Email](mailto:amanchandinc@gmail.com): Direct contact for work inquiries.
+
+## Optional
+
+- [Fifth portfolio](https://v3.amanchand.com.np): Previous portfolio version.
+- [Fourth portfolio](https://v2.amanchand.com.np): Previous portfolio version.
+- [Third portfolio](https://v1.amanchand.com.np): Previous portfolio version.
+- [Second portfolio](https://v0.amanchand.com.np): Previous portfolio version.
+- [First portfolio](https://v-1.amanchand.com.np): Previous portfolio version.

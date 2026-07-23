@@ -37,9 +37,17 @@
     <meta name="twitter:image" content="https://amanchand.com.np/profile.png" />
     <meta name="twitter:image:alt" content="Aman Chand | Software Developer" />
 
-    <meta name="theme-color" content="#faf9f6" />
+    <meta name="theme-color" content="#3a0c1c" />
     <link rel="icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="./roboto-flex-latin-wght-normal.woff2"
+      crossorigin
+    />
 
     <style>
       *,
@@ -49,8 +57,9 @@
       }
 
       :root {
-        --background: rgba(58, 12, 28, 1);
-        --foreground: rgba(245, 231, 220, 1);
+        --background: #3a0c1c;
+        --foreground: #f5e7dc;
+        --accent: #e0899a;
       }
 
       @font-face {
@@ -58,7 +67,7 @@
         src: url("./roboto-flex-latin-wght-normal.woff2") format("woff2");
         font-weight: 100 1000;
         font-style: normal;
-        font-display: swap;
+        font-display: optional;
       }
 
       body {
@@ -84,9 +93,14 @@
       }
 
       a {
-        color: var(--foreground);
+        color: var(--accent);
         font-weight: 500;
         text-underline-offset: 2px;
+        transition: opacity 150ms linear;
+      }
+
+      a:hover {
+        opacity: 0.75;
       }
 
       #age {

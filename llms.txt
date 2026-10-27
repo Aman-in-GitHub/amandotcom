@@ -1,27 +1,28 @@
 # Aman Chand
 
-> Full-stack software developer from Nepal with 2+ years of experience building web and mobile products. Specializing in Node.js, React, React Native, Android, iOS, and web scraping.
+> Full-stack software developer from Nepal with 3+ years of experience building web and mobile products. Specializing in Node.js, React, React Native, Flutter, Android, iOS, and web scraping.
 
-Born 2005-11-05 in Nepal. Alumnus of Tribhuvan University. Currently Lead Software Developer at Dopamine Confectionery. Speaks English, Nepali, and Hindi. Available for freelance and contract work.
+Born 2005-11-05 in Nepal. Alumnus of Tribhuvan University. Currently Co-founder of Alchemy Studio and Lead Software Developer at Dopamine Confectionery. Speaks English, Nepali, and Hindi. Available for freelance and contract work.
 
 - Site: https://amanchand.com.np
 - Email: amanchandinc@gmail.com
 
 ## Experience
 
+- [Alchemy Studio](https://alchemystudio.work): Co-founder (present).
 - [Dopamine Confectionery](https://dopamine.com.np): Lead Software Developer (present).
 - [Mashup Bar](https://mashupbar.de): Web Developer (contract).
 - [Halo Club](https://halo.club): Web Developer (contract).
 - [Hotel Dolmaling](https://hoteldolmaling.com): Full-Stack Software Developer (contract).
-- [The Audio Bee](https://theaudiobee.com): Frontend Developer (late 2024–2025).
-- [Parsedom](https://parsedom.com): Web Scraping Developer (2024–mid 2024).
+- [The Audio Bee](https://audiobee.ai): Frontend Developer (late 2024–2025).
+- [Parsedom](https://parsedom.com): Web Scraping Developer (early–mid 2024).
 - [Upwork profile](https://www.upwork.com/freelancers/~01f988b1775d874b9c): Freelance work and client reviews.
 
 ## Projects
 
 - [Pokédex](https://github.com/Aman-in-GitHub/Pokedex): An app to catch 'em all.
-- [Vibes](https://github.com/Aman-in-GitHub/Vibes): TikTok-style website for binge reading.
-- [Kode](https://github.com/Aman-in-GitHub/Kode-UniversalCodeCompiler): Online code editor and compiler supporting 15+ languages.
+- [Vibes](https://github.com/Aman-in-GitHub/Vibes): TikTok-like website for binge reading.
+- [Kode](https://github.com/Aman-in-GitHub/Kode-UniversalCodeCompiler): Online code editor/compiler for 15+ languages.
 - [MenstruaLog](https://github.com/Aman-in-GitHub/MenstruaLog-PeriodTrackingExtension): Browser extension for tracking period cycles and reminders.
 
 ## Achievements
